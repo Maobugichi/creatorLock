@@ -60,10 +60,10 @@ const FAQSection = () => {
                 drag={!isFlipped}
                 dragConstraints={{ left: -30, right: 30, top: -30, bottom: 30 }}
                 dragElastic={0.2}
-                onDrag={(e, { point }) => {
+                onDrag={(_, info ) => {
                   if (!isFlipped) {
-                    x.set(point.x / 10);
-                    y.set(point.y / 10);
+                    x.set(info.point.x / 10);
+                    y.set(info.point.y / 10);
                   }
                 }}
                 onDragEnd={() => {

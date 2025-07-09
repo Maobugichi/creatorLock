@@ -4,7 +4,7 @@ interface FeatureCardProps {
     className?:string
 }
 
-export const FeatureCard:React.FC<FeatureCardProps> = ({ className }) => {
+export const FeatureCard:React.FC<FeatureCardProps> = ({  }) => {
         const features = [
         {
             className: 'bg-[#EAE0FF] row-span-3 col-span-2',
