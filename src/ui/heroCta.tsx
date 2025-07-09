@@ -1,10 +1,9 @@
 import { Input } from "../components/input"
-import { useState } from "react"
 import { Form } from "../components/form"
 import { StackBtn } from "../components/stackedbtn"
 import { buttons } from "../object"
 export const Cta = () => {
-    const [ search , setSearch ] = useState<string>('')
+  
    
     return(
         <div className="w-[85%]  flex items-center justify-center gap-2 h-fit">
@@ -13,7 +12,7 @@ export const Cta = () => {
                 <Input
                     type="search"
                     name="search"
-                    value={search}
+                    value=''
                     placeholder="Waka for market..."
                     className="h-full w-[99%]  rounded-sm placeholder:text-xl placeholder:font-semibold border-2 border-solid font-semibold text-lg pl-5 focus:outline-none bg-white"
                 />
